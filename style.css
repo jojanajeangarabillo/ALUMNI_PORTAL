@@ -48,16 +48,16 @@
     font-weight: bold;
   }
   
-  /* Menu */
+  
 .menu img {
     width: 30px;
     cursor: pointer;
   }
   
-  /* Modal */
+
   .modal {
     display: none;
-    position: fixed; /* <-- important: fixed instead of absolute */
+    position: fixed; 
     top: 70px;
     right: 20px;
     background-color: #e6f0fa;
@@ -66,7 +66,7 @@
     flex-direction: column;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 120px;
-    z-index: 1000; /* <-- VERY important: higher than overlays */
+    z-index: 1000;
   }
   
   .modal a {
@@ -85,7 +85,7 @@
     display: flex;
   }
   
-  /* Banner Section */
+  
   .banner {
     position: relative;
     height: 250px;
@@ -114,7 +114,7 @@
     z-index: 2;
   }
   
-  /* Info Section */
+ 
   .info-section {
     padding: 50px 20px;
     display: flex;
@@ -146,7 +146,7 @@
     border-radius: 5px;
   }
   
-  /* Footer */
+ 
   .footer {
     position: relative;
     background: url('images/plpasigg.jpg') center/cover no-repeat;
@@ -289,15 +289,16 @@
   }
   
 
-  /* Login Section */
+ /* Login Section */
 .login-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-  }
-  
-  .login-container {
+    margin-top: 75px;
+}
+
+.login-container {
     background-color: #e6f0fa;
     border-radius: 20px;
     display: flex;
@@ -307,42 +308,62 @@
     width: 100%;
     height: 500px;
     align-items: center;
-  }
-  
-  .login-image img {
+}
+
+.login-image img {
     width: 400px;
     height: 400px;
     object-fit: cover; 
     border-radius: 20px;
-  }
-  
-  .login-form {
+}
+
+.login-form {
     display: flex;
     flex-direction: column;
     flex: 1;
-  }
-  
-  .login-form h2 {
+}
+
+.login-form h2 {
     color: #003366;
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 26px;
-  }
-  
-  .login-form .form-group {
+}
+
+.login-form .form-group {
     margin-bottom: 15px;
-  }
-  
-  .login-form input[type="email"],
-  .login-form input[type="password"] {
+    position: relative;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
     padding: 10px 12px;
     border: 1px solid #003366;
     border-radius: 5px;
     font-size: 14px;
     outline: none;
-  }
-  
-  .login-btn {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+
+.login-form .show-password {
+    position: absolute;
+    bottom: -25px;
+    right: 10px;
+    font-size: 14px;
+    color: #003366;
+    font-family: Arial, sans-serif; 
+}
+
+
+.login-form input[type="checkbox"] {
+    width: auto; 
+    height: auto; 
+    margin: 0; /
+}
+
+.login-btn {
     background-color: #0047AB;
     color: white;
     padding: 10px;
@@ -350,22 +371,22 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .register-link {
+    margin-top: 15px;
+}
+
+.register-link {
     margin-top: 15px;
     text-align: center;
     font-size: 14px;
     color: #003366;
-  }
-  
-  .register-link a {
+}
+
+.register-link a {
     color: #0047AB;
     text-decoration: none;
     font-weight: bold;
-  }
-  
+}
+
 
   /*ALUMNI HOME */
 
@@ -420,7 +441,7 @@ color: white;
 
 
 .sidebar {
-    background-color: #8DC5E5; 
+    background-color: #d9e5f6; 
     width: 220px;
     height: 100vh;
     position: fixed;
@@ -453,8 +474,8 @@ color: white;
 }
 
 .toggle-btn {
-    background-color: #004aad;
-    color: white;
+    background-color: #d9e5f6;
+    color: black;
     width: 100%;
     text-align: right;
     padding: 10px;

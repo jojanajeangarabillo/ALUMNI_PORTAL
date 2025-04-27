@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- Header -->
 <header class="header">
   <div class="header-left">
     <img src="images/logo.png" alt="PLP Logo" class="logo">
@@ -22,14 +21,12 @@
   </div>
 </header>
 
-<!-- Menu Modal -->
 <div id="modal" class="modal">
   <a href="register.php">Register</a>
   <a href="login.php">Log In</a>
   <a href="landing.php">Back</a>
 </div>
 
-<!-- Login Section -->
 <section class="login-section">
   <div class="login-container">
     <div class="login-image">
@@ -41,7 +38,10 @@
         <input type="email" name="email" placeholder="Email" required>
       </div>
       <div class="form-group">
-        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <label class="show-password">
+          <input type="checkbox" id="showPassword"> Show Password
+        </label>
       </div>
       <button type="submit" class="login-btn">Log In</button>
       <div class="register-link">
@@ -52,7 +52,17 @@
 </section>
 
 <script>
-  // Modal logic
+  const showPasswordCheckbox = document.getElementById('showPassword');
+  const passwordInput = document.getElementById('password');
+
+  showPasswordCheckbox.addEventListener('change', function () {
+    if (this.checked) {
+      passwordInput.type = 'text';
+    } else {
+      passwordInput.type = 'password';
+    }
+  });
+
   const menuButton = document.getElementById('menuButton');
   const modal = document.getElementById('modal');
 
