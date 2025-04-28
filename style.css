@@ -956,3 +956,17 @@ color: white;
 .previous-next{
   float: right;
 }
+
+/* Manage Profile */
+.manage-proile{
+  display: flex;
+  position: relative;
+}
+
+.mp-main-content{
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  margin-left: 230px;
+  margin-top:10px;
+}
