@@ -70,16 +70,58 @@
 </div>
 
         </div>
-    </div>
+</div>
 
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('collapsed');
-            const toggleBtn = document.querySelector('.toggle-btn');
-            toggleBtn.innerHTML = sidebar.classList.contains('collapsed') ? '&#x25B6;' : '&#x25C0;';
+
+<div id="login-modal" class="loginModal">
+  <div class="login-modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 id="modal-title">Event Title</h2>
+    <p><strong>Date & Schedule:</strong> <span id="modal-date">May 5, 2025, 10:00 AM</span></p>
+    <p><strong>Location:</strong> <span id="modal-location">PLP Main Campus</span></p>
+    <p id="modal-description">
+      Full event description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <button class="join-btn">Join</button>
+  </div>
+</div>
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('collapsed');
+        const toggleBtn = document.querySelector('.toggle-btn');
+        toggleBtn.innerHTML = sidebar.classList.contains('collapsed') ? '&#x25B6;' : '&#x25C0;';
+    }
+
+    const modal = document.getElementById('login-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const readMoreLinks = document.querySelectorAll('.read-more');
+
+    readMoreLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.style.display = 'block';
+
+            
+            document.getElementById('modal-title').innerText = 'Grand Alumni Homecoming';
+            document.getElementById('modal-date').innerText = 'May 30, 2025, 10:00 AM';
+            document.getElementById('modal-location').innerText = 'PLP Main Campus, Pasig City';
+            document.getElementById('modal-description').innerText = 'Join us for a day of fun, food, and nostalgia as we celebrate decades of excellence.';
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
         }
-    </script>
+    }
+</script>
+
 
 </body>
 </html>
