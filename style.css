@@ -890,7 +890,6 @@ color: white;
   background-color: #00276b;
 }
 
-<<<<<<< HEAD
 /*GALLERY MODAL */
 
 .gallery-modal {
@@ -940,7 +939,6 @@ color: white;
   color: black;
   text-decoration: none;
   cursor: pointer;
-=======
 /* Admin Alumni List */
 #al-content{
   display: flex;
@@ -1006,5 +1004,4 @@ color: white;
 
 .previous-next{
   float: right;
->>>>>>> 276c157895f44d0f90360b2f40f1175d47e2d1da
 }
