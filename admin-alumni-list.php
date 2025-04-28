@@ -25,7 +25,7 @@
                             <a href="profile.html" class="profile-pic">
                             <img src="images/avatar.png" alt="Profile Picture">
                             </a>
-                        <div class="profile-name">Marian</div>
+                        <div class="profile-name">ADMIN</div>
                         </div>
 
                         <a href="admin-home.php"><img src="images/home.png" alt="Home"><span>Home</span></a>
