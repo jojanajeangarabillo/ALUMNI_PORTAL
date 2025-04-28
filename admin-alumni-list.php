@@ -20,24 +20,24 @@
                 <div class="sidebar" id="sidebar">
                 <div class="toggle-btn" onclick="toggleSidebar()">&#x25C0;</div>
 
-                <div class="sidebar-content">
-                    <div class="profile-section">
-                        <a href="profile.html" class="profile-pic">
-                        <img src="images/avatar.png" alt="Profile Picture">
-                        </a>
-                    <div class="profile-name">Marian</div>
-                    </div>
+                    <div class="sidebar-content">
+                        <div class="profile-section">
+                            <a href="profile.html" class="profile-pic">
+                            <img src="images/avatar.png" alt="Profile Picture">
+                            </a>
+                        <div class="profile-name">Marian</div>
+                        </div>
 
-                    <a href="#" class="active"><img src="images/home.png" alt="Home"><span>Home</span></a>
-                    <a href="#"><img src="images/gallery.png" alt="Gallery"><span>Gallery</span></a>
-                    <a href="#"><img src="images/alumni_list.png" alt="Alumni List"><span>Alumni List</span></a>
-                    <a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
-                    <a href="#"><img src="images/forums.png" alt="Forums"><span>Forums</span></a>
-                    <a href="#"><img src="images/about.png" alt="About"><span>About</span></a>
-                    <a href="register.php"> <img src="images/signup.png" alt="Sign up"><span>Sign Up</span>
-                    <a href="landing.php"><img src="images/log-out.png" alt="Log Out"><span>Log Out</span></a>
+                        <a href="#" class="active"><img src="images/home.png" alt="Home"><span>Home</span></a>
+                        <a href="#"><img src="images/gallery.png" alt="Gallery"><span>Gallery</span></a>
+                        <a href="#"><img src="images/alumni_list.png" alt="Alumni List"><span>Alumni List</span></a>
+                        <a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
+                        <a href="#"><img src="images/forums.png" alt="Forums"><span>Forums</span></a>
+                        <a href="#"><img src="images/about.png" alt="About"><span>About</span></a>
+                        <a href="register.php"> <img src="images/signup.png" alt="Sign up"><span>Sign Up</span>
+                        <a href="landing.php"><img src="images/log-out.png" alt="Log Out"><span>Log Out</span></a>
+                    </div>
                 </div>
-            </div>
 
             <div class="al-main-content">
                 <header>List of Alumnis</header> <hr>

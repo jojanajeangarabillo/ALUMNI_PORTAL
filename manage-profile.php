@@ -41,6 +41,46 @@
                 <div class="mp-main-content">
                     <header>Account Details</header>
                     <p>Manage your profile details</p> <hr>
+                    <div class="profile-container">
+                        <div class="pfp">
+                            <img src="images/avatar.png"/>
+                        </div>
+                        <div class="info">
+                            <form class="profile-form">
+                                <label>Last Name</label>
+                                <input type="text" name="last-name">
+                                <label>First Name</label>
+                                <input type="text" name="first-name">
+                                <label>Middle Name</label>
+                                <input type="text" name="middle-name">
+                                <br>
+                                <label>Gender</label>
+                                <input type="radio" name="gender" value="Male">Male
+                                <input type="radio" name="gender" value="Female">Female
+                                <br>
+                                <label>Batch</label>
+                                <input type="number" min="2004">
+                                <label>Course Graduated</label>
+                                <select>
+                                    <option>Select</option>
+                                    <option name="IT">BS in Information Technology</option>
+                                    <option name="CS">BS in Computer Science</option>
+                                </select>
+                                <br>
+                                <label>Currently Connected</label>
+                                <input type="radio" name="connectedto" value="Yes">Yes
+                                <input type="radio" name="connectedto" value="No">No
+                                <br>
+                                <label>Email</label>
+                                <input type="email" name="email">
+                                <label>Password</label>
+                                <input type="password" name="password">
+                                <br>
+                                <button type="button">Update Profile</button>
+                            </form>
+                        </div>
+
+                    </div>
 
 
                 </div>

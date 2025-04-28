@@ -18,97 +18,71 @@
         </div>
     </div>
 
-    <div class="container">
-        <aside class="admin-sidebar">
-            <header class="sidebar-header">
-                <a href="#" class="header-logo">
-                    <img src="images/avatar.PNG" alt="Admin"/>
+    <div class="banner-interface"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">&#x25C0;</div>
+
+        <div class="sidebar-content">
+            <div class="profile-section">
+                <a href="profile.html" class="profile-pic">
+                    <img src="images/avatar.png" alt="Profile Picture">
                 </a>
-                <button class="toggler">
-                    <span><img src="images/hide.PNG"/></span>
-                </button>
-            </header>
-            <nav class="sidebar-nav">
-                <ul class="nav-list primary-nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <span class="nav-icon"><img src="images/home.PNG"/></span>
-                            <span class="nav-label">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <span class="nav-icon"><img src="images/gallery.PNG"/></span>
-                            <span class="nav-label">Gallery</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <span class="nav-icon"><img src="images/home.PNG"/></span>
-                            <span class="nav-label">Course List</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <span class="nav-icon"><img src="images/alumni_list.PNG"/></span>
-                            <span class="nav-label">Alumni List</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <span class="nav-icon"><img src="images/jobs.PNG"/></span>
-                            <span class="nav-label">Jobs</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <span class="nav-icon"><img src="images/home.PNG"/></span>
-                            <span class="nav-label">Events</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <span class="nav-icon"><img src="images/forums.PNG"/></span>
-                            <span class="nav-label">Forums</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="profile-name">Marian</div>
+            </div>
 
-                <ul class="nav-list secondary-nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <span class="nav-icon"><img src="images/log-out.PNG"/></span>
-                            <span class="nav-label">Log Out</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-
+            <a href="alumni-home.php" class="active"><img src="images/home.png" alt="Home"><span>Home</span></a>
+            <a href="alumni-gallery.php"><img src="images/gallery.png" alt="Gallery"><span>Gallery</span></a>
+            <a href="#"><img src="images/course-list.png" alt="Course List"><span>Course List</span></a>
+            <a href="#"><img src="images/alumni_list.png" alt="Alumni List"><span>Alumni List</span></a>
+            <a href="#"><img src="images/upload.png" alt="Alumni Upload"><span>Alumni Upload</span></a>
+            <a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
+            <a href="register.php"> <img src="images/calendar.png" alt="Events"><span>Events</span>
+            <a href="landing.php"><img src="images/forums.png" alt="Forum"><span>Forum</span></a>
+            <a href="landing.php"><img src="images/settings.png" alt="System Settings"><span>System Settings</span></a>
+        </div>
 
     </div>
 
-    <main class="content">
-        <header>DASHBOARD</header>
-        <div class="divisions">
-            <div class="alumni">
-                <p>0</p> <br>
-                <p>Alumni</p>
+    <div class="main-content">
+        <header>Dashboard</header> <hr>
+        <div class="division">
+            <div class="divs">
+                <header>Alumni</header>
+                <p>0</p>
+                <img src="images/avatar.png"/>
             </div>
-            <div class="forum-topic">
-                <p>0</p> <br>
-                <p>Forum Topic</p>
+            <div class="divs">
+                <header>Forum Topic</header>
+                <p>0</p>
+                <img src="images/forums.png"/>
             </div>
-            <div class="jobs">
-                <p>0</p> <br>   
-                <p>Jobs</p>
+            <div class="divs">
+                <header>Jobs</header>
+                <p>0</p>
+                <img src="images/jobs.png"/>
             </div>
-            <div class="events">
-                <p>0</p> <br>
-                <p>Events</p>
+            <div class="divs">
+                <header>Events</header>
+                <p>0</p>
+                <img src="images/calendar.png"/>
             </div>
+
         </div>
-    </main>
+        
+    </div>
+
+
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('collapsed');
+            const toggleBtn = document.querySelector('.toggle-btn');
+            toggleBtn.innerHTML = sidebar.classList.contains('collapsed') ? '&#x25B6;' : '&#x25C0;';
+        }
+    </script>
+
 
 
 </body>
