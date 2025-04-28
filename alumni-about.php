@@ -58,6 +58,16 @@
 
         </div>
 
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('collapsed');
+                const toggleBtn = document.querySelector('.toggle-btn');
+                toggleBtn.innerHTML = sidebar.classList.contains('collapsed') ? '&#x25B6;' : '&#x25C0;';
+            }
+        </script>
+
+
 
     </body>
 </html>
