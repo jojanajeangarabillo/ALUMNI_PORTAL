@@ -939,6 +939,8 @@ color: white;
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
 /* Admin Alumni List */
 #al-content{
   display: flex;
