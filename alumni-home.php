@@ -25,7 +25,7 @@
 
         <div class="sidebar-content">
     <div class="profile-section">
-        <a href="profile.html" class="profile-pic">
+        <a href="manage-profile.php" class="profile-pic">
             <img src="images/avatar.png" alt="Profile Picture">
         </a>
         <div class="profile-name">Marian</div>
