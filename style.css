@@ -699,8 +699,8 @@ color: white;
 
 .main-content header{
   font-weight: bold;
-  color:black;
-  font-size: 20px;
+  color:#00276b;
+  font-size: 30px;
   padding: 10px;
 }
 
@@ -1250,6 +1250,16 @@ textarea {
 
 .save-button:hover {
   background-color: #007BFF;
+}
+
+/* Alumni About */
+.topic{
+  height: 300px;
+  margin:20px;
+  padding: 40px;
+  font-size: 20px;
+  background: #9bd1fb;
+  text-align: center;
 }
 
 
