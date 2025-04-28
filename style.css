@@ -568,6 +568,11 @@ color: white;
     align-items: center;
 }
 
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .main-content {
     margin-left: 240px; 
