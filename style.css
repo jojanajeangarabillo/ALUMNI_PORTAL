@@ -440,6 +440,7 @@ color: white;
 }
 
 
+
 .sidebar {
     background-color: #d9e5f6; 
     width: 220px;
@@ -508,10 +509,14 @@ color: white;
    
 }
 
+.sidebar-content .profile-pic:hover {
+  background-color: #d9e5f6;
+}
+
 
 .sidebar.collapsed .profile-pic img {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
 }
 
 .profile-name {
