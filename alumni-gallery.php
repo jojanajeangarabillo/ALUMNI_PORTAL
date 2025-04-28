@@ -98,6 +98,23 @@
                         <button class="read-more-btn">Read More</button>
                             </a>
                     </div>
+
+
+
+                        <div id="gallery-modal" class="gallery-modal">
+    <div class="gallery-modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modal-title">Event Title</h3>
+        <p id="eventDate">Event Date</p>
+        <p id="eventDescription">Event Description</p>
+    </div>
+</div>
+</div>
+
+
+
+                    </div>
+                    </div>
                 </div>
 
             </div>
@@ -112,6 +129,50 @@
             toggleBtn.innerHTML = sidebar.classList.contains('collapsed') ? '&#x25B6;' : '&#x25C0;';
         }
     </script>
+
+    <script>
+
+const galleryModal = document.getElementById("gallery-modal"); 
+const closeBtn = document.querySelector(".close-btn");
+
+function openModal(title, date, description) {
+    document.getElementById("modal-title").textContent = title;
+    document.getElementById("eventDate").textContent = date;
+    document.getElementById("eventDescription").textContent = description;
+    galleryModal.style.display = "block";
+}
+
+closeBtn.onclick = function (event) {  
+    galleryModal.style.display = "none";
+}
+
+window.onclick = function (event) {  
+    if (event.target == galleryModal) {
+        galleryModal.style.display = "none";
+    }
+}
+
+
+const readMoreButtons = document.querySelectorAll(".read-more-btn");
+
+readMoreButtons.forEach(button => {
+    button.addEventListener("click", function (event) {
+        event.preventDefault();
+        
+        
+        const title = "Pamantasan ng Lungsod ng Pasig Celebrates 25th Founding Anniversary with Gawad Parangal 2025";
+        const date = "Pasig City – March 20, 2025";
+        const description = "The Pamantasan ng Lungsod ng Pasig (PLP) proudly celebrated a historic milestone with its 25th Founding Anniversary, highlighted by the prestigious Gawad Parangal 2025." + 
+        " Held at the university auditorium, the event recognized outstanding institutional and college partners, as well as dedicated faculty and staff whose contributions have been instrumental in" + 
+        "PLP’s growth and success. The ceremony commenced with a warm welcome from PLP’s esteemed school administrators. Dr. Reggie M. Maningas, University President, delivered his opening remarks," + 
+        "setting the tone for an afternoon of recognition and gratitude. Notable city officials graced the occasion, including Honorable Congressman Roman T. Romulo, Honorable Vice Mayor Robert Vincent" + 
+        "Jude B. Jaworski Jr., and Honorable City Mayor Victor Ma Regis N. Sotto. Also in attendance were City Councilors Maria Luisa De Leon and Simon Gerard R. Tantoco, who joined in celebrating this momentous occasion.";
+
+        openModal(title, date, description);
+    });
+}); 
+
+        </script>
 
 </body>
 </html>
