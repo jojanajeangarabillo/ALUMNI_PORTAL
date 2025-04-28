@@ -95,7 +95,7 @@
     }
 
     const modal = document.getElementById('login-modal');
-    const closeBtn = document.querySelector('.close-btn');
+    const gcloseBtn = document.querySelector('.gclose-btn');
     const readMoreLinks = document.querySelectorAll('.read-more');
 
     readMoreLinks.forEach(link => {
@@ -111,7 +111,7 @@
         });
     });
 
-    closeBtn.onclick = function() {
+    gcloseBtn.onclick = function() {
         modal.style.display = 'none';
     }
 
