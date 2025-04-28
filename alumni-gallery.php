@@ -28,8 +28,8 @@
                 <div class="profile-name">Marian</div>
             </div>
 
-            <a href="#" class="active"><img src="images/home.png" alt="Home"><span>Home</span></a>
-            <a href="#"><img src="images/gallery.png" alt="Gallery"><span>Gallery</span></a>
+            <a href="alumni-home.php"><img src="images/home.png" alt="Home"><span>Home</span></a>
+            <a href="alumni-gallery.php" class="active"><img src="images/gallery.png" alt="Gallery"><span>Gallery</span></a>
             <a href="#"><img src="images/alumni_list.png" alt="Alumni List"><span>Alumni List</span></a>
             <a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
             <a href="#"><img src="images/forums.png" alt="Forums"><span>Forums</span></a>
