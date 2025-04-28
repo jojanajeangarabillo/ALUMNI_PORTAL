@@ -890,6 +890,57 @@ color: white;
   background-color: #00276b;
 }
 
+/*GALLERY MODAL */
+
+.gallery-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.gallery-modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px; 
+  border: 1px solid #888;
+  width: 80%;  
+  max-width: 600px;  
+  border-radius: 10px; 
+}
+
+.gallery-modal-content h3 {
+  font-size: 22px;  
+  color: #003893;  
+  margin-bottom: 15px;  
+}
+
+.gallery-modal-content p {
+  font-size: 16px; 
+  color: #000;
+  margin-bottom: 20px;  
+  line-height: 1.6;  
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Admin Alumni List */
 #al-content{
   display: flex;
@@ -955,6 +1006,7 @@ color: white;
 
 .previous-next{
   float: right;
+<<<<<<< HEAD
 }
 
 /* Manage Profile */
@@ -969,4 +1021,6 @@ color: white;
   background-color: white;
   margin-left: 230px;
   margin-top:10px;
+=======
+>>>>>>> 59ba40c1ac3ad31493994685cfc3b447695a96e0
 }
