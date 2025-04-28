@@ -638,159 +638,43 @@ color: white;
 
 /* Admin Home */
 
-.admin-sidebar{
-  width: 270px;
-  position: fixed;
-  background: #d9e5f6;
-  height: calc(100vh - 32px);
+.main-content header{
+  font-weight: bold;
+  color:black;
+  font-size: 20px;
+  padding: 10px;
 }
 
-.container{
-  display: flex;
-  min-height: calc(100vh -60px)
+.main-content div{
+  padding: 10px;
+  margin: 3px;
 }
 
-.sidebar-header{
-  position: relative;
+.main-content img{
+  width: 140px;
+  height: 140px;
+}
+
+.division{
   display: flex;
-  padding: 25px 20px;
-  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
   justify-content: space-between;
-}
-
-.sidebar-header .header-logo img{
-  width: 66px;
-  height: 66px;
-  display: block;
-  object-fit: contain;
-  border-radius: 50%;
-}
-
-.sidebar-header .toggler img{
-  width: 20px;
-  height: 20px;
-}
-
-.sidebar .nav-list{
-  list-style: none;
-  display: flex;
-  gap: 4px;
-  padding: 0 15px;
-  flex-direction: column;
-  transform: translateY(15px);
-}
-
-
-.sidebar-nav .nav-link{
-  color: black;
-  display: flex;
-  padding: 12px 40px;
-  gap: 12px;
-  align-items: center;
-  text-decoration: none;
-  transition:  0.3s ease;
-}
-
-.sidebar-nav .nav-link:hover{
-  color: white;
-  background-color: #0056b3;
-}
-
-.sidebar-nav .nav-icon img{
-  width: 46px;
-  height: 46px;
-}
-
-.sidebar-nav .secondary-nav{
-  position: absolute;
-  bottom: 60px;
-  width: 100%;
-}
-
-.content{
-  flex-grow: 1;
-  padding: 30px;
-  background: white;;
-}
-
-.content .header{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 80px;
-  margin-left: 60px;
-  padding: 40px;
 }
 
-.divisions{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  margin-left: 60px;
-  padding: 40px;
-}
-
-.divisions p{
-  color:white;
-}
-
-.divisions .alumni{
-  width: 250px;
-  height: 150px;
-  background-color: #027afe  ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px;
-}
-
-.divisions .forum-topic{
-  width: 250px;
-  height: 150px;
-  background-color: #17a2b9  ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px;
+.divs{
+  flex: 1;
+  background: #9bd1fb;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  min-width: 150px;
 
 }
 
-.divisions .jobs{
-  width: 250px;
-  height: 150px;
-  background-color: #ffc107  ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px;
 
-}
 
-.divisions .events{
-  width: 250px;
-  height: 150px;
-  background-color: #015cbf  ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px;
-
-}
 
 /*GALLERY*/
 
@@ -1006,7 +890,6 @@ color: white;
 
 .previous-next{
   float: right;
-<<<<<<< HEAD
 }
 
 /* Manage Profile */
@@ -1021,6 +904,15 @@ color: white;
   background-color: white;
   margin-left: 230px;
   margin-top:10px;
-=======
->>>>>>> 59ba40c1ac3ad31493994685cfc3b447695a96e0
+}
+
+.profile-container{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.profile-form{
+  display: flex;
+  flex-direction: column;
 }
