@@ -36,7 +36,9 @@
                         <a href="#"><img src="images/forums.png" alt="Forums"><span>Forums</span></a>
                         <a href="#"><img src="images/about.png" alt="About"><span>About</span></a>
                         <a href="register.php"> <img src="images/signup.png" alt="Sign up"><span>Sign Up</span>
+                        <a href="admin-system-setting.php"><img src="images/settings.png" alt="System Settings"><span>System Settings</span></a>
                         <a href="landing.php"><img src="images/log-out.png" alt="Log Out"><span>Log Out</span></a>
+                        
                     </div>
                 </div>
 

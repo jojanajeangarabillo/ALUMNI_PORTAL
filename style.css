@@ -1183,3 +1183,73 @@ textarea {
 .cancel-btn:hover {
   background-color: #999;
 }
+
+
+/*ADMIN SETTING*/
+.setting-content {
+  margin-left: 240px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.sidebar.collapsed ~ .setting-content {
+  margin-left: 100px;
+}
+
+.settings-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="file"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.preview-image img {
+  margin-top: 10px;
+  width: 120px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.save-button {
+  background-color: #00a6d6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #007BFF;
+}
+
+

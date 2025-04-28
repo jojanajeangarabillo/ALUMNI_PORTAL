@@ -37,11 +37,11 @@
             <a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
             <a href="register.php"><img src="images/calendar.png" alt="Events"><span>Events</span></a>
             <a href="landing.php"><img src="images/forums.png" alt="Forum"><span>Forum</span></a>
-            <a href="landing.php"><img src="images/settings.png" alt="System Settings"><span>System Settings</span></a>
+            <a href="admin-system-setting.php"><img src="images/settings.png" alt="System Settings"><span>System Settings</span></a>
+            <a href="landing.php"><img src="images/log-out.png" alt="Log Out"><span>Log Out</span></a>
         </div>
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="content">
         <div class="table-controls">
             <label>Show 
