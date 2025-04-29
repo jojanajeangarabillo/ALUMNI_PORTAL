@@ -582,6 +582,7 @@ color: white;
     margin-top: 20px; 
     overflow-y: auto;
     max-height: 100vh; 
+    
 }
 
 .sidebar.collapsed ~ .main-content {
@@ -898,6 +899,10 @@ color: white;
   margin-top:10px;
 }
 
+.sidebar.collapsed ~ .al-main-content {
+  margin-left: 100px;
+}
+
 .al-main-content header{
   font-size: 26px;
   padding: 5px;
@@ -952,17 +957,14 @@ color: white;
 }
 
 /* Manage Profile */
+
+.main-content p{
+  padding: 20px;
+}
+
 .manage-proile{
   display: flex;
   position: relative;
-}
-
-.mp-main-content{
-  flex-grow: 1;
-  padding: 20px;
-  background-color: white;
-  margin-left: 230px;
-  margin-top:10px;
 }
 
 .profile-container{
@@ -972,6 +974,11 @@ color: white;
 }
 
 .profile-form{
+  gap: 20px;
+  
+}
+
+.form-profile{
   display: flex;
   flex-direction: column;
 }
@@ -1263,35 +1270,40 @@ textarea {
 }
 
 /* Admin Upload */
-.upload-form{
-  padding: 50px;
+.form-content{
+  margin-top: 20px;
   background:#9bd1fb;
   width:500px;
   height: 600px;
-
+  position: relative;
 }
 
-.form-upload{
-  padding: 20px;
+.description label{
+  font-size: 20px;
+  margin-top: 50px;
 }
 
-.form-upload form{
-  margin-top: 10px;
-  
-
+.description textarea{
+  margin-top: 20px;
+  height: 250px;
 }
 
-
-.form-upload button{
-  text-align: center;
+.form-content button{
+  width: 95px;
+  height: 40px;
+  border: none;
+  background:#004aad;
   color: white;
-  background: #003366;
-  width: 75px;
-  height: 35px;
-  margin-top:40px;
+  font-size: 16px;
 }
 
-
+.upload-button{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
 
 /* Alumni Forums */
 

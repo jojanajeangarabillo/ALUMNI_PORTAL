@@ -46,18 +46,23 @@
             <div class="main-content">
                 <header>Upload</header>
                 <hr><br>
-                <div class="upload-form">
-                    <form class="form-upload">
-                        <input type="file" name="file">
-                        <br><br>
-                        <label>Short Description</label><br>
-                        <textarea></textarea>
-                        <button type="submit">Save</button>
-                        <button type="button">Cancel</button>
+                <form>
+                    <div class="form-content">
+                        <div>
+                            <input type="file" name="file" id="file">
+                        </div>
+                
+                        <div class="description">
+                            <label>Short Description</label><br>
+                            <textarea></textarea>
+                        </div>
+                        <div class="upload-button">
+                            <button type="submit">Save</button>
+                            <button type="button">Cancel</button>
+                        </div>
+                    </div>
 
-                    </form>
-
-                </div>
+                </form>
             </div>
 
         </div>
