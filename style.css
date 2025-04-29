@@ -1033,75 +1033,198 @@ color: white;
 }
 
 /* Admin Alumni List */
-#al-content{
+
+#al-content {
   display: flex;
   position: relative;
 }
 
-.al-main-content{
+.al-main-content {
   flex-grow: 1;
   padding: 20px;
   background-color: white;
   margin-left: 230px;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .sidebar.collapsed ~ .al-main-content {
   margin-left: 100px;
 }
 
-.al-main-content header{
+.al-main-content header {
   font-size: 26px;
   padding: 5px;
   font-weight: bold;
   margin-bottom: 10px;
-
 }
 
-.table-alist table{
+
+.alist-search {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.alist-filter {
+  float: right;
+  width: 75px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+
+.table-alist table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.table-alist th, .table-alist td{
+.table-alist th,
+.table-alist td {
   border: 1px solid black;
   padding: 8px;
   text-align: center;
 }
 
 
-.alist-search{
-  padding: 5px;
-  margin-bottom: 5px;
-}
-
-.alist-filter{
-  float:right;
-  width: 75px;
-  height: 35px;
-  margin-bottom: 5px;
-}
-
-.table-alist button{
+.table-alist button,
+.btn-edit {
   width: 75px;
   height: 35px;
   border: none;
-  background:#004aad;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 2px;
+  text-align: center;
+  display: inline-block;
 }
 
-.list-foot{
-  background:#ebecf1;
+.btn-save {
+  background-color: #28a745; 
+}
+
+.btn-edit {
+  background-color: #ffc107; 
+  color: black;
+  text-decoration: none;
+  line-height: 35px;
+}
+
+.btn-delete {
+  background-color: #dc3545; 
+}
+
+.list-foot {
+  background: #ebecf1;
   padding: 20px;
 }
 
-.list-foot label{
+.list-foot label {
   font-size: 16px;
 }
 
-.previous-next{
+.previous-next {
   float: right;
 }
+
+
+
+/* Admin Course List Buttons */
+button.admin-course-list-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button.admin-course-list-btn.edit {
+  background-color: #ffcc00;  
+  color: white;
+}
+
+button.admin-course-list-btn.delete {
+  background-color: #ff4d4d;  
+  color: white;
+}
+
+
+button.admin-course-list-btn.edit:hover {
+  background-color: #e6b800; 
+}
+
+button.admin-course-list-btn.delete:hover {
+  background-color: #e60000;
+}
+
+
+/* Admin Course List Modal */
+.admin-course-list-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.admin-course-list-modal {
+  background-color: #fff;
+  padding: 30px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.admin-course-list-modal h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #004aad;
+}
+
+.admin-course-list-modal label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.admin-course-list-modal input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.admin-course-list-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.admin-course-list-modal-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-course-list-modal-buttons .save {
+  background-color: #004aad;
+  color: white;
+}
+
+.admin-course-list-modal-buttons .cancel {
+  background-color: #ccc;
+  color: black;
+}
+
 
 /* Manage Profile */
 
@@ -1109,7 +1232,7 @@ color: white;
   padding: 10px;
 }
 
-.manage-proile{
+.manage-profile{
   display: flex;
   height: 100vh;
   
@@ -1121,7 +1244,7 @@ color: white;
   gap: 40px;
   margin-top:50px;
   justify-content: center;
-  height: 100%;
+  height: 70%;
   background: #a2bffe;
 }
 
@@ -1312,12 +1435,12 @@ table img {
   z-index: 1000;
 }
 
-/* Show modal when checkbox is checked */
+
 .modal-toggle:checked + .admin-gallery-modal {
   display: flex;
 }
 
-/* Modal Content */
+
 .admin-gallery-content {
   background-color: #d8e6f7; 
   padding: 20px;
@@ -1327,7 +1450,7 @@ table img {
   position: relative;
 }
 
-/* Close button */
+
 .close-btn {
   position: absolute;
   top: 10px;
@@ -1337,7 +1460,7 @@ table img {
   cursor: pointer;
 }
 
-/* Form */
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1484,34 +1607,53 @@ textarea {
 }
 
 /* Admin Upload */
-.form-content{
+.alumni-upload-content {
+  display: flex;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.main-upload-area {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 230px;
+  background-color: white;
+}
+
+.form-content {
   margin-top: 20px;
-  background:#9bd1fb;
-  width:500px;
+  background: #9bd1fb;
+  width: 500px;
   height: 600px;
   position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
-.description label{
+.description label {
   font-size: 20px;
-  margin-top: 50px;
-}
-
-.description textarea{
   margin-top: 20px;
+  display: block;
+}
+
+.description textarea {
+  margin-top: 10px;
+  width: 100%;
   height: 250px;
-}
-
-.form-content button{
-  width: 95px;
-  height: 40px;
-  border: none;
-  background:#004aad;
-  color: white;
+  resize: none;
   font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.upload-button{
+.form-content input[type="file"] {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.upload-button {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -1519,6 +1661,16 @@ textarea {
   gap: 10px;
 }
 
+.form-content button {
+  width: 95px;
+  height: 40px;
+  border: none;
+  background: #004aad;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
 
 /* Alumni Forums Modal */
 .alumni-forums-modal {
