@@ -24,7 +24,7 @@
 
     <div class="sidebar-content">
       <div class="profile-section">
-        <a href="manage-profile.php" class="profile-pic">
+        <a href="alumni-manage-profile.php" class="profile-pic">
           <img src="images/avatar.png" alt="Profile Picture">
         </a>
         <div class="profile-name">Marian</div>
