@@ -13,10 +13,10 @@ function closeModal() {
   document.getElementById('topicModal').classList.add('hidden');
 }
 
-// Define the current user (you can replace "Marian" with dynamic data if needed)
+// diplay's user name for comment
 const currentUser = "Marian";
 
-// Add Comment
+// Add comment
 function addComment() {
   const newCommentInput = document.getElementById('newComment');
   const commentsList = document.getElementById('commentsList');
@@ -25,19 +25,15 @@ function addComment() {
   if (commentText !== '') {
     const commentDiv = document.createElement('div');
     commentDiv.className = 'bg-white p-3 rounded-lg shadow text-gray-700';
-
     // Use the current user name (e.g., "Marian") for the comment
-    commentDiv.innerHTML = `<strong>${currentUser}</strong>: ${commentText}`;
-
+    commentDiv.innerHTML = `<strong>${currentUser}</strong>: ${commentText}`
     commentsList.appendChild(commentDiv);
-    
     // Clear the comment input
     newCommentInput.value = '';
   }
 }
-
-
-// Allow "Enter" Key to submit
+ 
+// Enter comment 
 document.addEventListener('DOMContentLoaded', function() {
   const newCommentInput = document.getElementById('newComment');
   newCommentInput.addEventListener('keypress', function(event) {
