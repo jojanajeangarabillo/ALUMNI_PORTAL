@@ -52,6 +52,7 @@
                 Entries
             </label>
             <input type="text" class="search" placeholder="Search">
+            <button class="new-button">New +</button>
         </div>
 
         <table>
