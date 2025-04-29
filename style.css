@@ -641,21 +641,21 @@ color: white;
     background-color: #0056b3;
 }
 
-/* Modal Styles */
-.loginModal {
-  display: none; 
-  position: fixed; 
-  z-index: 1000; 
+/* Alumni Home Modal Styles */
+.alumni-home-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding-top: 60px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
 }
 
-.login-modal-content {
+.alumni-home-modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -691,7 +691,6 @@ color: white;
 .join-btn:hover {
   background-color: #0056b3;
 }
-
 
 
 
@@ -1263,14 +1262,8 @@ textarea {
 /* Alumni Forums */
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Modal */
-.modal {
+/* Alumni Forums Modal */
+.alumni-forums-modal {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1280,8 +1273,8 @@ textarea {
   z-index: 50;
 }
 
-.modal-content {
-  background: linear-gradient(to bottom right, #d1fae5, #a7f3d0); /* Pastel Green Gradient */
+.alumni-forums-modal-content {
+  background: linear-gradient(to bottom right, #d1fae5, #a7f3d0);
   padding: 2.5rem;
   max-width: 768px;
   width: 100%;
@@ -1293,8 +1286,7 @@ textarea {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Modal Components */
-.close-button {
+.alumni-forums-close-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -1304,11 +1296,11 @@ textarea {
   font-weight: bold;
 }
 
-.close-button:hover {
+.alumni-forums-close-button:hover {
   color: #111827;
 }
 
-.icon-container {
+.alumni-forums-icon-container {
   background-color: #fdfdfd;
   padding: 1rem;
   border-radius: 9999px;
@@ -1319,34 +1311,34 @@ textarea {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.modal-title {
+.alumni-forums-modal-title {
   font-size: 2rem;
   font-weight: 800;
   color: #7c3aed;
   margin-bottom: 1rem;
 }
 
-.modal-divider {
+.alumni-forums-modal-divider {
   border-top: 2px solid #c4b5fd;
   width: 50%;
   margin: 1rem auto;
 }
 
-.modal-description {
+.alumni-forums-modal-description {
   font-size: 1.125rem;
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
-.comments-title {
+.alumni-forums-comments-title {
   font-size: 1.5rem;
   font-weight: 700;
   color: #7c3aed;
   margin-bottom: 1rem;
 }
 
-.comment-input {
+.alumni-forums-comment-input {
   flex: 1;
   padding: 0.5rem;
   border: 1px solid #cbd5e1;
@@ -1354,7 +1346,7 @@ textarea {
   outline: none;
 }
 
-.comment-button {
+.alumni-forums-comment-button {
   background-color: #3b82f6;
   color: white;
   font-weight: bold;
@@ -1363,12 +1355,11 @@ textarea {
   transition: background 0.3s;
 }
 
-.comment-button:hover {
+.alumni-forums-comment-button:hover {
   background-color: #2563eb;
 }
 
+/* Utility */
 .hidden {
   display: none !important;
 }
-
-

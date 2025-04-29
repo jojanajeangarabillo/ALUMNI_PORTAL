@@ -11,112 +11,113 @@
 <body class="bg-gray-50">
 
 <!-- Header -->
-
-  <div class="interface-header">
-    <img src="images/logo.png" alt="PLP Logo" class="logo-interface">
-    <div class="text">
+<div class="interface-header">
+  <img src="images/logo.png" alt="PLP Logo" class="logo-interface">
+  <div class="text">
     <div class="school-name">Pamantasan Ng Lungsod Ng Pasig</div>
     <div class="alumni-title">ALUMNI</div>
-    </div>
   </div>
-  <section class="banner">
-    <div class="overlay"></div>
-    <h1><u> FORUM LIST</u></h1>
-  </section>
+</div>
 
-  <div class="sidebar" id="sidebar">
-    <div class="toggle-btn" onclick="toggleSidebar()">&#x25C0;</div>
-    <div class="sidebar-content">
+<section class="banner">
+  <div class="overlay"></div>
+  <h1><u> FORUM LIST</u></h1>
+</section>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="toggle-btn" onclick="toggleSidebar()">&#x25C0;</div>
+  <div class="sidebar-content">
     <div class="profile-section">
-    <a href="profile.html" class="profile-pic">
-       <img src="images/avatar.png" alt="Profile Picture"></a>
-        <div class="profile-name">Marian</div>
-      </div>
-      <a href="alumni-home.php"><img src="images/home.png" alt="Home"><span>Home</span></a>
-      <a href="alumni-gallery.php"><img src="images/gallery.png" alt="Gallery"><span>Gallery</span></a>
-      <a href="#"><img src="images/alumni_list.png" alt="Alumni List"><span>Alumni List</span></a>
-      <a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
-      <a href="alumni-forums.php" class="active"><img src="images/forums.png" alt="Forums"><span>Forums</span></a>
-      <a href="#"><img src="images/about.png" alt="About"><span>About</span></a>
-      <a href="register.php"><img src="images/signup.png" alt="Sign up"><span>Sign Up</span></a>
-      <a href="landing.php"><img src="images/log-out.png" alt="Log Out"><span>Log Out</span></a>
+      <a href="profile.html" class="profile-pic">
+        <img src="images/avatar.png" alt="Profile Picture">
+      </a>
+      <div class="profile-name">Marian</div>
     </div>
+    <a href="alumni-home.php"><img src="images/home.png" alt="Home"><span>Home</span></a>
+    <a href="alumni-gallery.php"><img src="images/gallery.png" alt="Gallery"><span>Gallery</span></a>
+    <a href="#"><img src="images/alumni_list.png" alt="Alumni List"><span>Alumni List</span></a>
+    <a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
+    <a href="alumni-forums.php" class="active"><img src="images/forums.png" alt="Forums"><span>Forums</span></a>
+    <a href="#"><img src="images/about.png" alt="About"><span>About</span></a>
+    <a href="register.php"><img src="images/signup.png" alt="Sign up"><span>Sign Up</span></a>
+    <a href="landing.php"><img src="images/log-out.png" alt="Log Out"><span>Log Out</span></a>
   </div>
+</div>
 
-<!-- MAIN CONTENT -->
-  <main class="p-8 ml-64">
-    <div class="flex justify-center mb-10">
+<!-- Main Content -->
+<main class="p-8 ml-64">
+  <div class="flex justify-center mb-10">
     <div class="relative w-2/3">
       <input 
         type="text" 
         placeholder="Search" 
-        class="w-full text-center pr-4 py-2 rounded-full border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-700" >
-        <div class="absolute top-1/2 left-3 transform -translate-y-1/2 text-blue-500 pointer-events-none">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0a7 7 0 10-9.9 0 7 7 0 009.9 0z" />
-       </svg>
-      </div>
+        class="w-full text-center pr-4 py-2 rounded-full border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-700">
+      <div class="absolute top-1/2 left-3 transform -translate-y-1/2 text-blue-500 pointer-events-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0a7 7 0 10-9.9 0 7 7 0 009.9 0z" />
+        </svg>
       </div>
     </div>
- <!-- To be follow -->
+  </div>
 
-
-<!-- Forum post continuation - FB concept -->
+  <!-- Forum Post -->
   <div class="bg-green-50 p-8 rounded-2xl shadow-lg w-full max-w-3xl mx-auto">
-  <h2 class="text-center text-xl font-bold mb-6">Mission of PLP</h2>
-  <div class="bg-blue-400 text-white rounded-2xl p-6">
-        <p class="mb-4">
-        To provide an inclusive and transformative education that empowers students to succeed in an ever-changing world. 
-        Through community engagement, we foster a culturally diverse and globally aware learning environment equipping students 
-        with the knowledge, skills, and values necessary for total human development.
+    <h2 class="text-center text-xl font-bold mb-6">Mission of PLP</h2>
+    <div class="bg-blue-400 text-white rounded-2xl p-6">
+      <p class="mb-4">
+        To provide an inclusive and transformative education that empowers students to succeed in an ever-changing world.
+      </p>
 
       <hr class="border-t-2 border-blue-300 mb-4">
 
       <div class="flex items-center justify-between">
         <button onclick="openModal()" class="bg-blue-900 hover:bg-blue-300 text-white font-bold py-1 px-3 rounded-full text-xs">
-           POSTED BY: ADMIN </button>
+          POSTED BY: ADMIN
+        </button>
 
         <button onclick="openModal()" class="bg-blue-900 hover:bg-blue-300 text-white font-bold py-1 px-3 rounded-full text-xs">
-          Take a look</button>
-    </div>
-    </div>
-    </div>
-</main>
-
-<!-- Modall -->
- <div id="topicModal" class="modal hidden">
- <div class="modal-content">
-      <button onclick="closeModal()" class="close-button">&times;</button>
-
-    <div class="text-center">
-        <div class="icon-container">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c.638 0 1.25.244 1.707.707A2.414 2.414 0 0114 10c0 .638-.244 1.25-.707 1.707A2.414 2.414 0 0112 12c-.638 0-1.25-.244-1.707-.707A2.414 2.414 0 0110 10c0-.638.244-1.25.707-1.707A2.414 2.414 0 0112 8zM12 14v2m0 4h.01" />
-       </svg></div>
-
-        <h2 class="modal-title">Mission of PLP</h2>
-        <hr class="modal-divider">
-        <p class="modal-description">
-        To provide an inclusive and transformative education that empowers students to succeed in an ever-changing world. 
-        Through community engagement, we foster a culturally diverse and globally aware learning environment equipping students 
-        with the knowledge, skills, and values necessary for total human development.
-</p>
-
-<!-- To get Feedback -->
-        <div class="mt-10 text-left">
-          <h3 class="comments-title">Comments</h3>
-          <div id="commentsList" class="space-y-4 mb-4"></div>
-          <div class="flex space-x-4">
-            <input id="newComment" type="text" placeholder="Write a comment..." class="comment-input" required>
-          <button onclick="addComment()" class="comment-button">Post</button>
+          Take a look
+        </button>
       </div>
-      </div>
-    </div>
     </div>
   </div>
+</main>
 
-  <script>
-    function toggleSidebar() {
+<!-- Modal -->
+<div id="alumni-forums-modal" class="alumni-forums-modal hidden">
+  <div class="alumni-forums-modal-content">
+    <button onclick="closeModal()" class="alumni-forums-close-button">&times;</button>
+
+    <div class="text-center">
+      <div class="alumni-forums-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c.638 0 1.25.244 1.707.707A2.414 2.414 0 0114 10c0 .638-.244 1.25-.707 1.707A2.414 2.414 0 0112 12c-.638 0-1.25-.244-1.707-.707A2.414 2.414 0 0110 10c0-.638.244-1.25.707-1.707A2.414 2.414 0 0112 8zM12 14v2m0 4h.01" />
+        </svg>
+      </div>
+
+      <h2 class="alumni-forums-modal-title">Mission of PLP</h2>
+      <hr class="alumni-forums-modal-divider">
+      <p class="alumni-forums-modal-description">
+        To provide an inclusive and transformative education that empowers students to succeed in an ever-changing world.
+      </p>
+
+      <!-- Comments Section -->
+      <div class="mt-10 text-left">
+        <h3 class="alumni-forums-comments-title">Comments</h3>
+        <div id="commentsList" class="space-y-4 mb-4"></div>
+        <div class="flex space-x-4">
+          <input id="newComment" type="text" placeholder="Write a comment..." class="alumni-forums-comment-input" required>
+          <button onclick="addComment()" class="alumni-forums-comment-button">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   sidebar.classList.toggle('collapsed');
   const toggleBtn = document.querySelector('.toggle-btn');
@@ -124,17 +125,15 @@
 }
 
 function openModal() {
-  document.getElementById('topicModal').classList.remove('hidden');
+  document.getElementById('alumni-forums-modal').classList.remove('hidden');
 }
 
 function closeModal() {
-  document.getElementById('topicModal').classList.add('hidden');
+  document.getElementById('alumni-forums-modal').classList.add('hidden');
 }
 
-// diplay's user name for comment
 const currentUser = "Marian";
 
-// Add comment
 function addComment() {
   const newCommentInput = document.getElementById('newComment');
   const commentsList = document.getElementById('commentsList');
@@ -143,15 +142,12 @@ function addComment() {
   if (commentText !== '') {
     const commentDiv = document.createElement('div');
     commentDiv.className = 'bg-white p-3 rounded-lg shadow text-gray-700';
-    // Use the current user name (e.g., "Marian") for the comment
-    commentDiv.innerHTML = `<strong>${currentUser}</strong>: ${commentText}`
+    commentDiv.innerHTML = `<strong>${currentUser}</strong>: ${commentText}`;
     commentsList.appendChild(commentDiv);
-    // Clear the comment input
     newCommentInput.value = '';
   }
 }
- 
-// Enter comment 
+
 document.addEventListener('DOMContentLoaded', function() {
   const newCommentInput = document.getElementById('newComment');
   newCommentInput.addEventListener('keypress', function(event) {
@@ -161,8 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-  </script>
-
+</script>
 
 </body>
 </html>
