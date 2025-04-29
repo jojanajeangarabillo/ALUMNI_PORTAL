@@ -67,6 +67,12 @@
     </div>
   </div>
 
+  <div class="add-topic-forum">
+    <button onclick="openCreateModal()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+    +  Create New Post
+</button>
+  </div>
+
   <table class="forum-table">
     <thead>
       <tr>
@@ -107,6 +113,48 @@
   </table>
 </main>
 
+<div id="create-post-modal" class="alumni-forums-modal hidden">
+  <div class="alumni-forums-modal-content">
+    <button onclick="closeCreateModal()" class="alumni-forums-close-button">&times;</button>
+
+    <h2 class="alumni-forums-modal-title text-center">Create New Forum Post</h2>
+    <hr class="alumni-forums-modal-divider mb-4">
+
+    <form id="forumPostForm" class="space-y-4">
+      <!-- Topic -->
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1" for="topic">Topic</label>
+        <input id="topic" name="topic" type="text" class="w-full p-2 border border-gray-300 rounded-lg" required>
+      </div>
+
+      <!-- Description -->
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1" for="description">Short Description</label>
+        <input id="description" name="description" type="text" class="w-full p-2 border border-gray-300 rounded-lg" required>
+      </div>
+
+      <!-- Full Context -->
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1" for="fullContext">Full Context</label>
+        <textarea id="fullContext" name="fullContext" rows="6" class="w-full p-2 border border-gray-300 rounded-lg" required></textarea>
+      </div>
+
+      <!-- File Upload -->
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1" for="attachment">Attach Related File</label>
+        <input id="attachment" name="attachment" type="file" class="w-full p-1 border border-gray-300 rounded-lg">
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full">
+          Submit Post
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
 </div>
 <script>
         function toggleSidebar() {
@@ -115,7 +163,17 @@
             const toggleBtn = document.querySelector('.toggle-btn');
             toggleBtn.innerHTML = sidebar.classList.contains('collapsed') ? '&#x25B6;' : '&#x25C0;';
         }
+
+        function openCreateModal() {
+        document.getElementById('create-post-modal').classList.remove('hidden');
+
+        function closeCreateModal() {
+        document.getElementById('create-post-modal').classList.add('hidden');
+}
+}
     </script>
+
+    
 
 </body>
 </html>
