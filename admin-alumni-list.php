@@ -70,7 +70,7 @@
                         <td><button type="button">Save</button></td>
                         <td>
                             <button type="button">Save</button>
-                            <button type="button">Edit</button>
+                            <a href="manage-profile.php" class="btn-link-style">Edit</a>
                             <button type="button">Delete</button>
                         </td>
                     </tr>
