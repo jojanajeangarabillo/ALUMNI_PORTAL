@@ -1780,7 +1780,7 @@ textarea {
 }
 
 .alumni-forums-modal-content {
-  background: linear-gradient(to bottom right, #d1fae5, #a7f3d0);
+  background:#9bd1fb;
   padding: 2.5rem;
   max-width: 768px;
   width: 100%;
@@ -1820,7 +1820,7 @@ textarea {
 .alumni-forums-modal-title {
   font-size: 2rem;
   font-weight: 800;
-  color: #7c3aed;
+  color: black;
   margin-bottom: 1rem;
 }
 
@@ -2179,4 +2179,126 @@ textarea {
 }
 .delete-btn:hover {
   background-color: #c82333;
+}
+
+
+
+/*ADMIN FORUMS*/
+
+.admin-forums-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.admin-forum-form-group {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.admin-forums-modal-content {
+  background:#9bd1fb;
+  padding: 2.5rem;
+  max-width: 768px;
+  width: 100%;
+  border-radius: 1.5rem;
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.admin-forums-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.admin-forums-close-button:hover {
+  color: #000;
+}
+
+.admin-forum-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.admin-forum-divider {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-top: 1px solid #d1d5db;
+}
+
+.admin-forum-modal-content label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+}
+
+.admin-forum-modal-content input,
+.admin-forum-modal-content textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.admin-forum-submit {
+  background-color: #22c55e;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 1rem;
+}
+
+.admin-forum-submit:hover {
+  background-color: #16a34a;
+}
+
+.add-topic-forum {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.add-topic-forum button {
+  background-color: #22c55e;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-topic-forum button:hover {
+  background-color: #16a34a;
+}
+
+.hidden {
+  display: none !important;
 }
