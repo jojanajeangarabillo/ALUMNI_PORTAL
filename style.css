@@ -1262,4 +1262,33 @@ textarea {
   text-align: center;
 }
 
+/* Admin Upload */
+.upload-form{
+  padding: 50px;
+  background:#9bd1fb;
+  width:500px;
+  height: 600px;
+
+}
+
+.form-upload{
+  padding: 20px;
+}
+
+.form-upload form{
+  margin-top: 10px;
+  
+
+}
+
+
+.form-upload button{
+  text-align: center;
+  color: white;
+  background: #003366;
+  width: 75px;
+  height: 35px;
+  margin-top:40px;
+}
+
 
