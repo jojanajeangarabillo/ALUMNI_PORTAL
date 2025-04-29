@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE htm>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +18,11 @@
         </div>
     </div>
 
+    <div class="banner-interface"></div>
+
     <div class="sidebar" id="sidebar">
         <div class="toggle-btn" onclick="toggleSidebar()">&#x25C0;</div>
+
         <div class="sidebar-content">
             <div class="profile-section">
                 <a href="profile.html" class="profile-pic">
@@ -34,49 +38,77 @@
             <a href="admin-alumni-upload.php"><img src="images/upload.png" alt="Alumni Upload"><span>Alumni Upload</span></a>
             <a href="admin-job.php"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
             <a href="register.php"> <img src="images/calendar.png" alt="Events"><span>Events</span>
-            <a href="admin-forums.php"><img src="images/forums.png" alt="Forum"><span>Forum</span></a>
-            <a href="admin-system-setting.php" class="active"><img src="images/settings.png" alt="System Settings"><span>System Settings</span></a>
+            <a href="admin-forums.php" class="active"><img src="images/forums.png" alt="Forum"><span>Forum</span></a>
+            <a href="admin-system-setting.php"><img src="images/settings.png" alt="System Settings"><span>System Settings</span></a>
             <a href="landing.php"><img src="images/log-out.png" alt="Log Out"><span>Log Out</span></a>
            
         </div>
+
     </div>
 
-    <div class="setting-content">
-        <h2>System Settings</h2>
-        <form class="settings-form" action="#" method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="systemName">System Name</label>
-                <input type="text" id="systemName" name="systemName" value="PLP Alumni Portal">
-            </div>
+  <!-- Main content -->
+  <main class="content">
+  <h2>Forum Topics</h2>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" value="plp@sample.comm">
-            </div>
-
-            <div class="form-group">
-                <label for="contact">Contact</label>
-                <input type="text" id="contact" name="contact" value="+123 456 789">
-            </div>
-
-            <div class="form-group">
-                <label for="aboutContent">About Content</label>
-                <textarea id="aboutContent" name="aboutContent" rows="8">The quick brown fox jumps over a lazy dog The quick brown fox jumps over a lazy dog The quick brown fox jumps over a lazy dog The quick brown fox jumps over a lazy dog </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="imageUpload">Image</label>
-                <input type="file" id="imageUpload" name="imageUpload">
-                <div class="preview-image">
-                    <img src="images/your-uploaded-image.png" alt="Preview">
-                </div>
-            </div>
-
-            <button type="submit" class="save-button">Save</button>
-        </form>
+  <div class="table-controls">
+    <div class="entries-control">
+      <label for="entries">Show</label>
+      <select id="entries">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="25">25</option>
+      </select>
+      <span>Entries</span>
     </div>
 
-    <script>
+    <div class="search-control">
+      <label for="search">Search:</label>
+      <input type="text" id="search" placeholder="Search topic..." />
+    </div>
+  </div>
+
+  <table class="forum-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Topic</th>
+        <th>Description</th>
+        <th>Posted By</th>
+        <th>Comments</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Topic By Admin</td>
+        <td>Lorem ipsum dolor sit amet...</td>
+        <td>Admin</td>
+        <td>1</td>
+        <td>
+          <button class="view-btn">View</button>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Sample Topic</td>
+        <td>Lorem ipsum dolor sit amet...</td>
+        <td>Juan Dela Cruz</td>
+        <td>0</td>
+        <td>
+          <button class="view-btn">View</button>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+</div>
+<script>
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             sidebar.classList.toggle('collapsed');
