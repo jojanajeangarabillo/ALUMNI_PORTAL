@@ -1673,6 +1673,17 @@ textarea {
 }
 
 /* Alumni Forums Modal */
+
+.add-topic{
+  text-align: center;
+}
+
+.add-topic button{
+  position: absoulte;
+  font-weight: bold;
+  width: 250px;
+}
+
 .alumni-forums-modal {
   position: fixed;
   inset: 0;
