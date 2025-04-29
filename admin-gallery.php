@@ -18,7 +18,6 @@
         </div>
     </div>
 
-
     <div class="sidebar" id="sidebar">
         <div class="toggle-btn" onclick="toggleSidebar()">&#x25C0;</div>
         <div class="sidebar-content">
@@ -52,7 +51,6 @@
                 </select>
                 Entries
             </label>
-
             <input type="text" class="search" placeholder="Search">
         </div>
 
@@ -106,10 +104,10 @@
         </div>
     </div>
 
-    
+    <!-- Modal 1 -->
     <input type="checkbox" id="modal-toggle-1" class="modal-toggle" hidden>
-    <div class="modal">
-        <div class="modal-content">
+    <div class="admin-gallery-modal">
+        <div class="admin-gallery-content">
             <label for="modal-toggle-1" class="close-btn">&times;</label>
 
             <form class="modal-form">
@@ -130,10 +128,10 @@
         </div>
     </div>
 
-   
+    <!-- Modal 2 -->
     <input type="checkbox" id="modal-toggle-2" class="modal-toggle" hidden>
-    <div class="modal">
-        <div class="modal-content">
+    <div class="admin-gallery-modal">
+        <div class="admin-gallery-content">
             <label for="modal-toggle-2" class="close-btn">&times;</label>
 
             <form class="modal-form">
@@ -154,10 +152,10 @@
         </div>
     </div>
 
-
+    <!-- Modal 3 -->
     <input type="checkbox" id="modal-toggle-3" class="modal-toggle" hidden>
-    <div class="modal">
-        <div class="modal-content">
+    <div class="admin-gallery-modal">
+        <div class="admin-gallery-content">
             <label for="modal-toggle-3" class="close-btn">&times;</label>
 
             <form class="modal-form">
@@ -178,7 +176,6 @@
         </div>
     </div>
 
-    
     <script>
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');

@@ -1073,8 +1073,8 @@ table img {
 }
 
 
-/*admin gallery Modal*/
-.modal {
+/* Admin Gallery Modal */
+.admin-gallery-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -1087,13 +1087,13 @@ table img {
   z-index: 1000;
 }
 
-
-.modal-toggle:checked + .modal {
+/* Show modal when checkbox is checked */
+.modal-toggle:checked + .admin-gallery-modal {
   display: flex;
 }
 
-
-.modal-content {
+/* Modal Content */
+.admin-gallery-content {
   background-color: #d8e6f7; 
   padding: 20px;
   border-radius: 8px;
@@ -1102,7 +1102,7 @@ table img {
   position: relative;
 }
 
-
+/* Close button */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -1112,12 +1112,12 @@ table img {
   cursor: pointer;
 }
 
+/* Form */
 .modal-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 
 input[type="file"] {
   width: 100%;
@@ -1127,7 +1127,6 @@ input[type="file"] {
   font-size: 14px;
   border-radius: 4px;
 }
-
 
 textarea {
   width: 100%;
@@ -1139,20 +1138,18 @@ textarea {
   font-size: 14px;
 }
 
-
 .desc-label {
   font-size: 18px;
   color: #666;
   margin-bottom: 5px;
 }
 
-
+/* Buttons */
 .form-actions {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
 
 .save-btn {
   background-color: #007bff; 
@@ -1163,7 +1160,6 @@ textarea {
   cursor: pointer;
   font-size: 14px;
 }
-
 
 .cancel-btn {
   background-color: #ccc; 
