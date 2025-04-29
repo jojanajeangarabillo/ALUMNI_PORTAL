@@ -1106,28 +1106,99 @@ color: white;
 /* Manage Profile */
 
 .main-content p{
-  padding: 20px;
+  padding: 10px;
 }
 
 .manage-proile{
   display: flex;
-  position: relative;
+  height: 100vh;
+  
 }
 
 .profile-container{
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
+  margin-top:50px;
+  justify-content: center;
+  height: 100%;
+  background: #a2bffe;
 }
 
-.profile-form{
-  gap: 20px;
-  
+
+.info{
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
 }
+
+.pfp{
+  width: 200px;
+  height: 200px;
+}
+
+.pfp-picture{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+
+.change-pfp{
+  width: 150px;
+  padding: 5px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+
 
 .form-profile{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px 20px;
+  
+}
+
+.profile-form{
+  margin-top: 20px;
+  gap: 20px;
+}
+
+
+.form-profile input[type="text"],
+.form-profile input[type="number"],
+.form-profile input[type="email"],
+.form-profile input[type="password"],
+.form-profile select {
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-profile input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-profile label{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-form button {
+  width: 150px;
+  padding: 10px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 
