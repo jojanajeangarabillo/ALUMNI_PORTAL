@@ -693,6 +693,154 @@ color: white;
 }
 
 
+/* JOB HEADER */
+.job-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #002366;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.post-job-btn {
+  background-color: #003399;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px 30px 10px 40px;
+  border: 2px solid #003399;
+  border-radius: 20px;
+  outline: none;
+  width: 300px;
+  background: #fff url('images/search-icon.png') no-repeat 10px center;
+  background-size: 20px;
+}
+
+/* JOB CARDS */
+.job-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.job-card {
+  background-color: #99ccff;
+  padding: 30px;
+  width: 800px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.job-card h2 {
+  text-align: center;
+  color: #002366;
+  font-size: 28px;
+  margin-bottom: 10px;
+  background-color: #99ccff; /* Add white background */
+  display: inline-block;    /* So background wraps text only */
+  padding: 5px 20px;        /* Some padding inside */
+  border-radius: 10px;   
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);   /* Rounded corners like in image */
+}
+
+
+.job-meta {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.job-meta div {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #002366;
+}
+
+.job-meta img {
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+}
+
+.job-card p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* JOB FOOTER */
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posted-by {
+  background-color: #003399;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.read-more {
+  background-color: #003399;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: -35px;
+  cursor: pointer;
+}
+
+.icon-job {
+  width: 18px;  /* Adjust size */
+  height: 18px; /* Adjust size */
+  margin-right: 8px; /* Space between the icon and text */
+  filter:
+    brightness(0)        /* Turn the icon into black */
+    saturate(100%)       /* Ensure it's solid */
+    invert(27%)          /* Shift towards blue */
+    sepia(97%)           /* Add some warmth */
+    saturate(4855%)      /* Boost color intensity */
+    hue-rotate(196deg)   /* Fine-tune hue to get blue */
+    brightness(90%)      /* Adjust final lightness */
+    contrast(94%);       /* Enhance contrast */
+}
+
+
+
 
 /* Admin Home */
 
