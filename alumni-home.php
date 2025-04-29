@@ -33,9 +33,9 @@
       <a href="alumni-home.php" class="active"><img src="images/home.png" alt="Home"><span>Home</span></a>
       <a href="alumni-gallery.php"><img src="images/gallery.png" alt="Gallery"><span>Gallery</span></a>
       <a href="#"><img src="images/alumni_list.png" alt="Alumni List"><span>Alumni List</span></a>
-      <a href="#"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
-      <a href="#"><img src="images/forums.png" alt="Forums"><span>Forums</span></a>
-      <a href="#"><img src="images/about.png" alt="About"><span>About</span></a>
+      <a href="alumni-job.php"><img src="images/jobs.png" alt="Jobs"><span>Jobs</span></a>
+      <a href="alumni-forums.php"><img src="images/forums.png" alt="Forums"><span>Forums</span></a>
+      <a href="alumni-about.php"><img src="images/about.png" alt="About"><span>About</span></a>
       <a href="register.php"><img src="images/signup.png" alt="Sign up"><span>Sign Up</span></a>
       <a href="landing.php"><img src="images/log-out.png" alt="Log Out"><span>Log Out</span></a>
     </div>
