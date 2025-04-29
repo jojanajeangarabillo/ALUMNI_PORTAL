@@ -22,7 +22,7 @@
   </div>
   <section class="banner">
     <div class="overlay"></div>
-    <h1><u>FORUM LIST</u></h1>
+    <h1><u> FORUM LIST</u></h1>
   </section>
 
   <div class="sidebar" id="sidebar">
@@ -51,8 +51,7 @@
       <input 
         type="text" 
         placeholder="Search" 
-        class="w-full text-center pr-4 py-2 rounded-full border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-700"
-        >
+        class="w-full text-center pr-4 py-2 rounded-full border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-700" >
         <div class="absolute top-1/2 left-3 transform -translate-y-1/2 text-blue-500 pointer-events-none">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0a7 7 0 10-9.9 0 7 7 0 009.9 0z" />
@@ -68,20 +67,21 @@
   <h2 class="text-center text-xl font-bold mb-6">Mission of PLP</h2>
   <div class="bg-blue-400 text-white rounded-2xl p-6">
         <p class="mb-4">
-          The mission of Pamantasan ng Lungsod ng Pasig (PLP) is to provide quality higher education for the development of students 
-          into responsible, competent, and globally competitive individuals. </p>
+        To provide an inclusive and transformative education that empowers students to succeed in an ever-changing world. 
+        Through community engagement, we foster a culturally diverse and globally aware learning environment equipping students 
+        with the knowledge, skills, and values necessary for total human development.
 
-        <hr class="border-t-2 border-blue-300 mb-4">
+      <hr class="border-t-2 border-blue-300 mb-4">
 
-        <div class="flex items-center justify-between">
-          <button onclick="openModal()" class="bg-blue-900 hover:bg-blue-300 text-white font-bold py-1 px-3 rounded-full text-xs">
-            POSTED BY: ADMIN 
-          </button>
+      <div class="flex items-center justify-between">
+        <button onclick="openModal()" class="bg-blue-900 hover:bg-blue-300 text-white font-bold py-1 px-3 rounded-full text-xs">
+           POSTED BY: ADMIN </button>
 
-          <button onclick="openModal()" class="bg-blue-900 hover:bg-blue-300 text-white font-bold py-1 px-3 rounded-full text-xs">
-            VIEW TOPIC
-          </button>
-        </div></div></div>
+        <button onclick="openModal()" class="bg-blue-900 hover:bg-blue-300 text-white font-bold py-1 px-3 rounded-full text-xs">
+          Take a look</button>
+    </div>
+    </div>
+    </div>
 </main>
 
 <!-- Modall -->
@@ -93,17 +93,17 @@
         <div class="icon-container">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c.638 0 1.25.244 1.707.707A2.414 2.414 0 0114 10c0 .638-.244 1.25-.707 1.707A2.414 2.414 0 0112 12c-.638 0-1.25-.244-1.707-.707A2.414 2.414 0 0110 10c0-.638.244-1.25.707-1.707A2.414 2.414 0 0112 8zM12 14v2m0 4h.01" />
-       </svg>
-  </div>
+       </svg></div>
 
         <h2 class="modal-title">Mission of PLP</h2>
         <hr class="modal-divider">
         <p class="modal-description">
-          The mission of Pamantasan ng Lungsod ng Pasig (PLP) is to provide quality higher education for the development of students 
-          into responsible, competent, and globally competitive individuals.
+        To provide an inclusive and transformative education that empowers students to succeed in an ever-changing world. 
+        Through community engagement, we foster a culturally diverse and globally aware learning environment equipping students 
+        with the knowledge, skills, and values necessary for total human development.
 </p>
 
-<!-- Comments section -->
+<!-- To get Feedback -->
         <div class="mt-10 text-left">
           <h3 class="comments-title">Comments</h3>
           <div id="commentsList" class="space-y-4 mb-4"></div>
@@ -120,6 +120,3 @@
 
 </body>
 </html>
-
-
-
